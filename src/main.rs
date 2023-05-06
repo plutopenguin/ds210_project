@@ -39,7 +39,7 @@ fn read_file(filename: &str) -> Graph {
 #[test]
 fn test_good() {
     //test function for valid inputs
-    let new = read_file(r"C:\Users\taiyo\OneDrive\Desktop\ds210_project\project\twitch\twitch\DE\musae_DE_edges.csv");
+    let new = read_file(r"C:\Users\taiyo\OneDrive\Documents\GitHub\ds210_project\twitch\twitch\DE\musae_DE_edges.csv");
     //tests compute_single_distance_bfs()
     assert_eq!(directory_bfs(&new,Some(&792),Some(&1),Some(&458)), "792 and 458 are 3 edges apart");
     //tests the hidden gem in compute_single_distance_bfs()
@@ -52,7 +52,7 @@ fn test_good() {
 #[test]
 fn test_bad() {
     //test function for invalid integer inputs
-    let new = read_file(r"C:\Users\taiyo\OneDrive\Desktop\ds210_project\project\twitch\twitch\DE\musae_DE_edges.csv");
+    let new = read_file(r"C:\Users\taiyo\OneDrive\Documents\GitHub\ds210_project\twitch\twitch\DE\musae_DE_edges.csv");
     //invalid 1st input
     assert_eq!(directory_bfs(&new,Some(&-92),Some(&2),None),"The user number must be within the given bounds.");
     //invalid 2nd input
@@ -64,6 +64,6 @@ fn test_bad() {
 //prevents the program from compiling so it cannot be demonstrated with test functions.
 
 fn main() {
-    let new = read_file(r"C:\Users\taiyo\OneDrive\Desktop\ds210_project\project\twitch\twitch\DE\musae_DE_edges.csv");
+    let new = read_file(r"C:\Users\taiyo\OneDrive\Documents\GitHub\ds210_project\twitch\twitch\DE\musae_DE_edges.csv");
     println!("{}",directory_bfs(&new,None,None,None));
 }
