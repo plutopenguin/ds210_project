@@ -1,7 +1,7 @@
 # ds210_project
 (The dataset used is "\ds210_project\twitch\twitch\DE\musae_DE_edges.csv")
 
-This is a fairly simple program that returns information about a dataset containing pairs of Twitch users where at least one follows the other. The Twitch users are represented with integers starting from 0.
+This is a fairly simple program based on graph data that returns information about a dataset containing pairs of Twitch users where at least one follows the other. The Twitch users are represented with integers starting from 0.
 
 The program relies on user inputs. 
 
